@@ -10,7 +10,7 @@ public class SimpleGetRequest {
     String url = "http://3.82.205.143:8000/api/spartans";
 
     @Test
-    public void test1() {
+    public void test1(){
 
         //send a get request and save response inside the Response object
         Response response = RestAssured.get(url);
@@ -20,7 +20,8 @@ public class SimpleGetRequest {
         //print response body
         response.prettyPrint();
 
-
+        //verify status code is 200
         Assertions.assertEquals(200,response.statusCode());
+
     }
 }
