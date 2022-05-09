@@ -1,0 +1,87 @@
+```       /*
+        firstName Karole                          --> students[0].firstName
+        batch 7                                   --> students[0].batch
+        major Master of Creative Arts             --> students[0].major
+        emailAddress hassan.lebsack@hotmail.com   --> students[0].contact.emailAddress
+        companyName Legacy Integration Analyst    --> students[0].company.companyName
+        street 6253 Willard Place                 --> students[0].company.address.street
+        zipCode 28524                             --> students[0].company.address.zipCode
+         */
+
+ {
+    "students": [
+        {
+            "studentId": 24103,
+            "firstName": "Karole",
+            "lastName": "Mante",
+            "batch": 7,
+            "joinDate": "08/29/2021",
+            "birthDate": "08/29/2021",
+            "password": "956",
+            "subject": "Bachelor of Engineering",
+            "gender": "female",
+            "admissionNo": "55640",
+            "major": "Master of Creative Arts",
+            "section": "com.github.javafaker.Number@f95d64d",
+            "contact": {
+                "contactId": 24123,
+                "phone": "310.026.1705",
+                "emailAddress": "hassan.lebsack@hotmail.com",
+                "premanentAddress": "5797 Watsica Landing"
+            },
+            "company": {
+                "companyId": 24043,
+                "companyName": "Legacy Integration Analyst",
+                "title": "Regional Implementation Associate",
+                "startDate": "08/29/2021",
+                "address": {
+                    "addressId": 24043,
+                    "street": "6253 Willard Place",
+                    "city": "South Luciusstad",
+                    "state": "Missouri",
+                    "zipCode": 28524
+                }
+            }
+        }
+    ]
+}
+
+public clas Students{
+    private List<Student>;
+}
+
+public class Student{
+
+    private String firstName;
+    private int batch;
+    private String major;
+    private Contact contact;
+    private Company company;
+}
+
+
+public class Contact{
+
+    private String emailAddress;
+
+}
+
+public class Company{
+
+    private String companyName;
+    private Address address;
+
+}
+
+public class Address{
+
+    private String street;
+    private int zipCode;
+
+}
+
+
+
+
+
+```

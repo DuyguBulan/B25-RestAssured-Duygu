@@ -17,6 +17,7 @@ public class SpartanGetRequests {
        Then status code must be 200
        And response content type must be application/json
     */
+    @DisplayName("GET all spartans")
     @Test
     public void test1(){
 
